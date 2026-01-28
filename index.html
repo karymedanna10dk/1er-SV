@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuestro primer San Valentín</title>
+
+  <style>
+    body {
+      background-color: #f6f1ec;
+      font-family: 'Georgia', serif;
+      color: #5a4a42;
+      text-align: center;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .polaroids {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .polaroids img {
+      width: 160px;
+      background: white;
+      padding: 10px 10px 30px 10px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .polaroids img:nth-child(1) { transform: rotate(-3deg); }
+    .polaroids img:nth-child(2) { transform: rotate(2deg); }
+    .polaroids img:nth-child(3) { transform: rotate(-1deg); }
+
+    .carta {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .vinilos {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    .vinilos div {
+      width: 150px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .vinilos img {
+      width: 140px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      margin-top: 50px;
+      background-color: #c8a2c8;
+      border: none;
+      padding: 15px 35px;
+      border-radius: 30px;
+      font-size: 18px;
+      cursor: pointer;
+      color: white;
+    }
+
+    #respuesta {
+      display: none;
+      margin-top: 30px;
+      font-size: 20px;
+      color: #7a5c7a;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Nuestro primer San Valentín</h1>
+
+  <!-- POLAROIDS -->
+  <div class="polaroids">
+    <img src="polaroid1.jpg">
+    <img src="polaroid2.jpg">
+    <img src="polaroid3.jpg">
+  </div>
+
+  <!-- CARTA -->
+  <div class="carta">
+    <p>Muñequita,</p>
+
+    <p>
+      No sabía que en tan poquito tiempo se pudiera amar tan profundo.
+      Pero llegaste tú y todo se volvió suave, real, hogar.
+    </p>
+
+    <p>
+      Amor, gracias por estos cinco meses, por tu ternura y por elegirme cada día.
+    </p>
+
+    <p>
+      Este es nuestro primer San Valentín y quiero preguntarte algo especial.
+    </p>
+  </div>
+
+  <!-- VINILOS -->
+  <div class="vinilos">
+    <div>
+      <img src="vinyl1.jpg">
+      <p>Contigo todo se siente más lento, más bonito, más real.</p>
+    </div>
+
+    <div>
+      <img src="vinyl2.jpg">
+      <p>Eres mi lugar seguro, incluso cuando todo pesa.</p>
+    </div>
+
+    <div>
+      <img src="vinyl3.jpg">
+      <p>Te elijo sin miedo. Te llamo mía con el corazón abierto.</p>
+    </div>
+  </div>
+
+  <!-- BOTÓN -->
+  <button class="btn" onclick="mostrarRespuesta()">
+    ¿Quieres ser mi San Valentín?
+  </button>
+
+  <p id="respuesta">
+    💜 Gracias por decir que sí, amor. Este es solo el comienzo de todo lo que quiero vivir contigo.
+  </p>
+
+  <script>
+    function mostrarRespuesta() {
+      document.getElementById("respuesta").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
